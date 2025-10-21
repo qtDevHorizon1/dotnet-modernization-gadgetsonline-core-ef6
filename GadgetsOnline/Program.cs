@@ -7,8 +7,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using GadgetsOnline.Models;
-using System.IO;
 
 namespace GadgetsOnline
 {
@@ -24,8 +22,6 @@ namespace GadgetsOnline
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseContentRoot(Directory.GetCurrentDirectory());
-                    webBuilder.UseWebRoot(Path.Combine(AppContext.BaseDirectory, "wwwroot"));
                     webBuilder.UseStartup<Startup>();
                 });
     }

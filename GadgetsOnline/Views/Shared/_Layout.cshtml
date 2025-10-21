@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>@ViewBag.Title</title>
@@ -24,7 +24,6 @@
         </ul>
     </div>
 
-    @*@{Html.RenderAction("CategoryMenu", "Store");}*@ @*OLD*@ 
     @await Component.InvokeAsync("CategoryMenu")
 
     <div id="main">
